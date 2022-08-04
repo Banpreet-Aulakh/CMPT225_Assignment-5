@@ -146,6 +146,7 @@ int main () {
 
     // cout << "Parse Successful!\n";
     run(pTree);
+    delete pTree;
 
 }
 
