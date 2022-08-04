@@ -245,6 +245,7 @@ ExpnNode *ParseF() {
             match(lptok);
             ret = ParseE();
             match(rptok);
+            if (sign) ret = new ExpnNode(NULL, ret, mitok);
             return ret;
         }
         else {
